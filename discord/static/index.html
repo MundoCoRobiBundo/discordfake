@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="static/style.css" />
+        <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+        <script src="static/script.js"></script>
+        <title>Discord</title>
+	</head>
+	<body>
+		<img src="static/back.svg" class="img">
+        <div class="box" id="box">
+            <h1 class="welcome">Witamy ponownie!</h1>
+            <p class="happy">Cieszymy się, że znowu z nami jesteś!</p>
+
+            <div class="inpbox one">
+                <p class="inpdisplay" id="email">ADRES E-MAIL LUB NUMER TELEFONU</p>
+                <input type="text" class="inp" id="inp1">
+            </div>
+            
+            <div class="inpbox two" id="inpbox">
+                <p class="inpdisplay" id="password">HASŁO</p>
+                <input type="password" class="inp" id="inp2">
+            </div>
+
+            <button class="submit" onclick="submit()" id="submit">
+                <div class="spinner hidden" id="spinner"></div>
+                <div id="btntext">Zaloguj się</div>
+            </button>
+        </div>
+	</body>
+</html>
